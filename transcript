@@ -1,0 +1,1620 @@
+# vsim -c -novopt sisc_tb 
+# //  ModelSim SE-64 6.5b_1 Jul 14 2009 Linux 3.11.10-11-desktop
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing /nfs/s-l011/local/vol00/b/bmreynolds/Desktop/computerarchicture/computerarchitecture/work.sisc_tb
+# Loading work.sisc_tb
+# Refreshing /nfs/s-l011/local/vol00/b/bmreynolds/Desktop/computerarchicture/computerarchitecture/work.sisc
+# Loading work.sisc
+# Refreshing /nfs/s-l011/local/vol00/b/bmreynolds/Desktop/computerarchicture/computerarchitecture/work.alu
+# Loading work.alu
+# Refreshing /nfs/s-l011/local/vol00/b/bmreynolds/Desktop/computerarchicture/computerarchitecture/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/s-l011/local/vol00/b/bmreynolds/Desktop/computerarchicture/computerarchitecture/work.mux32
+# Loading work.mux32
+# Refreshing /nfs/s-l011/local/vol00/b/bmreynolds/Desktop/computerarchicture/computerarchitecture/work.rf
+# Loading work.rf
+# Refreshing /nfs/s-l011/local/vol00/b/bmreynolds/Desktop/computerarchicture/computerarchitecture/work.statreg
+# Loading work.statreg
+# Refreshing /nfs/s-l011/local/vol00/b/bmreynolds/Desktop/computerarchicture/computerarchitecture/work.ctrl
+# Loading work.ctrl
+# Refreshing /nfs/s-l011/local/vol00/b/bmreynolds/Desktop/computerarchicture/computerarchitecture/work.pc
+# Loading work.pc
+# Refreshing /nfs/s-l011/local/vol00/b/bmreynolds/Desktop/computerarchicture/computerarchitecture/work.br
+# Loading work.br
+# Refreshing /nfs/s-l011/local/vol00/b/bmreynolds/Desktop/computerarchicture/computerarchitecture/work.im
+# Loading work.im
+# in start 0
+#                    0   READ_DATA[31:0] = 00000000
+# 	, R0= 00000000, R1 = 00000000
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 0000
+# 	  RD_SEL = x, ALU_OP = x,  WB_SEL = x
+# 	, RF_WE = x, WB_DATA = 00000000
+# 	, MM= 0, ALU_Result = 00000000
+# 	, PC_WRITE = x,  PC_SEL = x,  PC_RST = 1,  BR_SEL = x
+# 	 BR_ADDR= 0001,  PC_OUT  aka READ_ADDR= 0000,  PC_INC = 0001
+# 	   READ_DATA = 00000000
+# 	 RST_F = 0
+# 	 OP_CODE = 0
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+#                   10   READ_DATA[31:0] = 00000000
+# 	, R0= 00000000, R1 = 00000000
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 0000
+# 	  RD_SEL = x, ALU_OP = x,  WB_SEL = x
+# 	, RF_WE = x, WB_DATA = 00000000
+# 	, MM= 0, ALU_Result = 00000000
+# 	, PC_WRITE = x,  PC_SEL = x,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 0001,  PC_OUT  aka READ_ADDR= 0000,  PC_INC = 0001
+# 	   READ_DATA = 00000000
+# 	 RST_F = 1
+# 	 OP_CODE = 0
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in start1
+# in fetch
+#                   25   READ_DATA[31:0] = 88011234
+# 	, R0= 00000000, R1 = 00000000
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 1234
+# 	  RD_SEL = x, ALU_OP = 3,  WB_SEL = x
+# 	, RF_WE = x, WB_DATA = 00001234
+# 	, MM= 8, ALU_Result = 00001234
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 1236,  PC_OUT  aka READ_ADDR= 0001,  PC_INC = 0002
+# 	   READ_DATA = 88011234
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in decode
+# checking opcode
+# alu_op
+# immediate operation
+#                   35   READ_DATA[31:0] = 88011234
+# 	, R0= 00000000, R1 = 00000000
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 1234
+# 	  RD_SEL = x, ALU_OP = 3,  WB_SEL = x
+# 	, RF_WE = 0, WB_DATA = 00001234
+# 	, MM= 8, ALU_Result = 00001234
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 1236,  PC_OUT  aka READ_ADDR= 0001,  PC_INC = 0002
+# 	   READ_DATA = 88011234
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# aluopImm_execute
+#                   45   READ_DATA[31:0] = 88011234
+# 	, R0= 00000000, R1 = 00000000
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 1234
+# 	  RD_SEL = 0, ALU_OP = 1,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00001234
+# 	, MM= 8, ALU_Result = 00001234
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 1236,  PC_OUT  aka READ_ADDR= 0001,  PC_INC = 0002
+# 	   READ_DATA = 88011234
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# aluopImm_Write
+#                   55   READ_DATA[31:0] = 88011234
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 1234
+# 	  RD_SEL = 0, ALU_OP = 1,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00001234
+# 	, MM= 8, ALU_Result = 00001234
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 1236,  PC_OUT  aka READ_ADDR= 0001,  PC_INC = 0002
+# 	   READ_DATA = 88011234
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in fetch
+#                   65   READ_DATA[31:0] = 80123002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 0, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00004236
+# 	, MM= 0, ALU_Result = 00004236
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 3005,  PC_OUT  aka READ_ADDR= 0002,  PC_INC = 0003
+# 	   READ_DATA = 80123002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00001234, Regb=00000000
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                   75   READ_DATA[31:0] = 80123002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 0, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00004236
+# 	, MM= 0, ALU_Result = 00004236
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 3005,  PC_OUT  aka READ_ADDR= 0002,  PC_INC = 0003
+# 	   READ_DATA = 80123002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00001234, Regb=00000000
+# aluopReg_Execute
+#                   85   READ_DATA[31:0] = 80123002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00001234
+# 	, MM= 0, ALU_Result = 00001234
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 3005,  PC_OUT  aka READ_ADDR= 0002,  PC_INC = 0003
+# 	   READ_DATA = 80123002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 1
+# 	 RegA=00001234, Regb=00000000
+# aluopReg_Write
+#                   95   READ_DATA[31:0] = 80123002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00001234
+# 	, MM= 0, ALU_Result = 00001234
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 3005,  PC_OUT  aka READ_ADDR= 0002,  PC_INC = 0003
+# 	   READ_DATA = 80123002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 1
+# 	 RegA=00001234, Regb=00000000
+# in fetch
+#                  105   READ_DATA[31:0] = 48000008
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0008
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00000008
+# 	, MM= 8, ALU_Result = 00000008
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 000c,  PC_OUT  aka READ_ADDR= 0003,  PC_INC = 0004
+# 	   READ_DATA = 48000008
+# 	 RST_F = 1
+# 	 OP_CODE = 4
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in decode
+# checking opcode
+# branch absolute operation
+#                  115   READ_DATA[31:0] = 48000008
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0008
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000008
+# 	, MM= 8, ALU_Result = 00000008
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 000c,  PC_OUT  aka READ_ADDR= 0003,  PC_INC = 0004
+# 	   READ_DATA = 48000008
+# 	 RST_F = 1
+# 	 OP_CODE = 4
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in branch abs
+# branch condition not found
+# in fetch
+#                  135   READ_DATA[31:0] = 80213002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00003002
+# 	, MM= 0, ALU_Result = 00003002
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 3007,  PC_OUT  aka READ_ADDR= 0004,  PC_INC = 0005
+# 	   READ_DATA = 80213002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00001234
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                  145   READ_DATA[31:0] = 80213002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00003002
+# 	, MM= 0, ALU_Result = 00003002
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 3007,  PC_OUT  aka READ_ADDR= 0004,  PC_INC = 0005
+# 	   READ_DATA = 80213002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00001234
+# aluopReg_Execute
+#                  155   READ_DATA[31:0] = 80213002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = ffffedcc
+# 	, MM= 0, ALU_Result = ffffedcc
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 3007,  PC_OUT  aka READ_ADDR= 0004,  PC_INC = 0005
+# 	   READ_DATA = 80213002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 1
+# 	 RegA=00000000, Regb=00001234
+# aluopReg_Write
+#                  165   READ_DATA[31:0] = 80213002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = ffffedcc
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = ffffedcc
+# 	, MM= 0, ALU_Result = ffffedcc
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 3007,  PC_OUT  aka READ_ADDR= 0004,  PC_INC = 0005
+# 	   READ_DATA = 80213002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 1
+# 	 RegA=00000000, Regb=00001234
+# in fetch
+#                  175   READ_DATA[31:0] = 48000007
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = ffffedcc
+# 	, R4 = 00000000 
+# 	 IMMediate = 0007
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00000007
+# 	, MM= 8, ALU_Result = 00000007
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 000d,  PC_OUT  aka READ_ADDR= 0005,  PC_INC = 0006
+# 	   READ_DATA = 48000007
+# 	 RST_F = 1
+# 	 OP_CODE = 4
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in decode
+# checking opcode
+# branch absolute operation
+#                  185   READ_DATA[31:0] = 48000007
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = ffffedcc
+# 	, R4 = 00000000 
+# 	 IMMediate = 0007
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000007
+# 	, MM= 8, ALU_Result = 00000007
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = x
+# 	 BR_ADDR= 000d,  PC_OUT  aka READ_ADDR= 0005,  PC_INC = 0006
+# 	   READ_DATA = 48000007
+# 	 RST_F = 1
+# 	 OP_CODE = 4
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in branch abs
+# branch condition found !
+#                  195   READ_DATA[31:0] = 48000007
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = ffffedcc
+# 	, R4 = 00000000 
+# 	 IMMediate = 0007
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000007
+# 	, MM= 8, ALU_Result = 00000007
+# 	, PC_WRITE = 0,  PC_SEL = 1,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0007,  PC_OUT  aka READ_ADDR= 0005,  PC_INC = 0006
+# 	   READ_DATA = 48000007
+# 	 RST_F = 1
+# 	 OP_CODE = 4
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in fetch
+#                  205   READ_DATA[31:0] = 80123001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = ffffedcc
+# 	, R4 = 00000000 
+# 	 IMMediate = 3001
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00004235
+# 	, MM= 0, ALU_Result = 00004235
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 3001,  PC_OUT  aka READ_ADDR= 0007,  PC_INC = 0008
+# 	   READ_DATA = 80123001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00001234, Regb=00000000
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                  215   READ_DATA[31:0] = 80123001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = ffffedcc
+# 	, R4 = 00000000 
+# 	 IMMediate = 3001
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00004235
+# 	, MM= 0, ALU_Result = 00004235
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 3001,  PC_OUT  aka READ_ADDR= 0007,  PC_INC = 0008
+# 	   READ_DATA = 80123001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00001234, Regb=00000000
+# aluopReg_Execute
+#                  225   READ_DATA[31:0] = 80123001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = ffffedcc
+# 	, R4 = 00000000 
+# 	 IMMediate = 3001
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00001234
+# 	, MM= 0, ALU_Result = 00001234
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 3001,  PC_OUT  aka READ_ADDR= 0007,  PC_INC = 0008
+# 	   READ_DATA = 80123001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 1
+# 	 RegA=00001234, Regb=00000000
+# aluopReg_Write
+#                  235   READ_DATA[31:0] = 80123001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 3001
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00001234
+# 	, MM= 0, ALU_Result = 00001234
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 3001,  PC_OUT  aka READ_ADDR= 0007,  PC_INC = 0008
+# 	   READ_DATA = 80123001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 1
+# 	 RegA=00001234, Regb=00000000
+# in fetch
+#                  245   READ_DATA[31:0] = 51000001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0001
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00000001
+# 	, MM= 1, ALU_Result = 00000001
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0001,  PC_OUT  aka READ_ADDR= 0008,  PC_INC = 0009
+# 	   READ_DATA = 51000001
+# 	 RST_F = 1
+# 	 OP_CODE = 5
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in decode
+# checking opcode
+# branch relative operation
+#                  255   READ_DATA[31:0] = 51000001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0001
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000001
+# 	, MM= 1, ALU_Result = 00000001
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0001,  PC_OUT  aka READ_ADDR= 0008,  PC_INC = 0009
+# 	   READ_DATA = 51000001
+# 	 RST_F = 1
+# 	 OP_CODE = 5
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in branchRel
+# branch condition not found
+# in fetch
+#                  275   READ_DATA[31:0] = 80223001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 3001
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00003001
+# 	, MM= 0, ALU_Result = 00003001
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 3001,  PC_OUT  aka READ_ADDR= 0009,  PC_INC = 000a
+# 	   READ_DATA = 80223001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                  285   READ_DATA[31:0] = 80223001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 3001
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00003001
+# 	, MM= 0, ALU_Result = 00003001
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 3001,  PC_OUT  aka READ_ADDR= 0009,  PC_INC = 000a
+# 	   READ_DATA = 80223001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# aluopReg_Execute
+#                  295   READ_DATA[31:0] = 80223001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 3001
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000000
+# 	, MM= 0, ALU_Result = 00000000
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 3001,  PC_OUT  aka READ_ADDR= 0009,  PC_INC = 000a
+# 	   READ_DATA = 80223001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 1    STAT_EN = 1
+# 	 RegA=00000000, Regb=00000000
+# aluopReg_Write
+#                  305   READ_DATA[31:0] = 80223001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 3001
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00000000
+# 	, MM= 0, ALU_Result = 00000000
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 3001,  PC_OUT  aka READ_ADDR= 0009,  PC_INC = 000a
+# 	   READ_DATA = 80223001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 1    STAT_EN = 1
+# 	 RegA=00000000, Regb=00000000
+# in fetch
+#                  315   READ_DATA[31:0] = 51000001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 0001
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00000001
+# 	, MM= 1, ALU_Result = 00000001
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0001,  PC_OUT  aka READ_ADDR= 000a,  PC_INC = 000b
+# 	   READ_DATA = 51000001
+# 	 RST_F = 1
+# 	 OP_CODE = 5
+# 	 STAT = 1    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in decode
+# checking opcode
+# branch relative operation
+#                  325   READ_DATA[31:0] = 51000001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 0001
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000001
+# 	, MM= 1, ALU_Result = 00000001
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0001,  PC_OUT  aka READ_ADDR= 000a,  PC_INC = 000b
+# 	   READ_DATA = 51000001
+# 	 RST_F = 1
+# 	 OP_CODE = 5
+# 	 STAT = 1    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in branchRel
+# branch condition found
+#                  335   READ_DATA[31:0] = 51000001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 0001
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000001
+# 	, MM= 1, ALU_Result = 00000001
+# 	, PC_WRITE = 0,  PC_SEL = 1,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 000c,  PC_OUT  aka READ_ADDR= 000a,  PC_INC = 000b
+# 	   READ_DATA = 51000001
+# 	 RST_F = 1
+# 	 OP_CODE = 5
+# 	 STAT = 1    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in fetch
+#                  345   READ_DATA[31:0] = 00000000
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 0000
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000000
+# 	, MM= 0, ALU_Result = 00000000
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 000d,  PC_OUT  aka READ_ADDR= 000c,  PC_INC = 000d
+# 	   READ_DATA = 00000000
+# 	 RST_F = 1
+# 	 OP_CODE = 0
+# 	 STAT = 1    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in decode
+# checking opcode
+# noop
+#                  355   READ_DATA[31:0] = 00000000
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 0000
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000000
+# 	, MM= 0, ALU_Result = 00000000
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 000d,  PC_OUT  aka READ_ADDR= 000c,  PC_INC = 000d
+# 	   READ_DATA = 00000000
+# 	 RST_F = 1
+# 	 OP_CODE = 0
+# 	 STAT = 1    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in fetch
+#                  365   READ_DATA[31:0] = 80213002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00003002
+# 	, MM= 0, ALU_Result = 00003002
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 3010,  PC_OUT  aka READ_ADDR= 000d,  PC_INC = 000e
+# 	   READ_DATA = 80213002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 1    STAT_EN = 0
+# 	 RegA=00000000, Regb=00001234
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                  375   READ_DATA[31:0] = 80213002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00003002
+# 	, MM= 0, ALU_Result = 00003002
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 3010,  PC_OUT  aka READ_ADDR= 000d,  PC_INC = 000e
+# 	   READ_DATA = 80213002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 1    STAT_EN = 0
+# 	 RegA=00000000, Regb=00001234
+# aluopReg_Execute
+#                  385   READ_DATA[31:0] = 80213002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00000000
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = ffffedcc
+# 	, MM= 0, ALU_Result = ffffedcc
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 3010,  PC_OUT  aka READ_ADDR= 000d,  PC_INC = 000e
+# 	   READ_DATA = 80213002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 1
+# 	 RegA=00000000, Regb=00001234
+# aluopReg_Write
+#                  395   READ_DATA[31:0] = 80213002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = ffffedcc
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = ffffedcc
+# 	, MM= 0, ALU_Result = ffffedcc
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 3010,  PC_OUT  aka READ_ADDR= 000d,  PC_INC = 000e
+# 	   READ_DATA = 80213002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 1
+# 	 RegA=00000000, Regb=00001234
+# in fetch
+#                  405   READ_DATA[31:0] = 62000000
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = ffffedcc
+# 	, R4 = 00000000 
+# 	 IMMediate = 0000
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00000000
+# 	, MM= 2, ALU_Result = 00000000
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 000f,  PC_OUT  aka READ_ADDR= 000e,  PC_INC = 000f
+# 	   READ_DATA = 62000000
+# 	 RST_F = 1
+# 	 OP_CODE = 6
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in decode
+# checking opcode
+# branch negative absolute operation
+#                  415   READ_DATA[31:0] = 62000000
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = ffffedcc
+# 	, R4 = 00000000 
+# 	 IMMediate = 0000
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000000
+# 	, MM= 2, ALU_Result = 00000000
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 000f,  PC_OUT  aka READ_ADDR= 000e,  PC_INC = 000f
+# 	   READ_DATA = 62000000
+# 	 RST_F = 1
+# 	 OP_CODE = 6
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in negative absolute branch
+# branch condition not found
+# in fetch
+#                  435   READ_DATA[31:0] = 80123002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = ffffedcc
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00004236
+# 	, MM= 0, ALU_Result = 00004236
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 3012,  PC_OUT  aka READ_ADDR= 000f,  PC_INC = 0010
+# 	   READ_DATA = 80123002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00001234, Regb=00000000
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                  445   READ_DATA[31:0] = 80123002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = ffffedcc
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00004236
+# 	, MM= 0, ALU_Result = 00004236
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 3012,  PC_OUT  aka READ_ADDR= 000f,  PC_INC = 0010
+# 	   READ_DATA = 80123002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00001234, Regb=00000000
+# aluopReg_Execute
+#                  455   READ_DATA[31:0] = 80123002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = ffffedcc
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00001234
+# 	, MM= 0, ALU_Result = 00001234
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 3012,  PC_OUT  aka READ_ADDR= 000f,  PC_INC = 0010
+# 	   READ_DATA = 80123002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 1
+# 	 RegA=00001234, Regb=00000000
+# aluopReg_Write
+#                  465   READ_DATA[31:0] = 80123002
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 3002
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00001234
+# 	, MM= 0, ALU_Result = 00001234
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 3012,  PC_OUT  aka READ_ADDR= 000f,  PC_INC = 0010
+# 	   READ_DATA = 80123002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 1
+# 	 RegA=00001234, Regb=00000000
+# in fetch
+#                  475   READ_DATA[31:0] = 62000012
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0012
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00000012
+# 	, MM= 2, ALU_Result = 00000012
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 0023,  PC_OUT  aka READ_ADDR= 0010,  PC_INC = 0011
+# 	   READ_DATA = 62000012
+# 	 RST_F = 1
+# 	 OP_CODE = 6
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in decode
+# checking opcode
+# branch negative absolute operation
+#                  485   READ_DATA[31:0] = 62000012
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0012
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000012
+# 	, MM= 2, ALU_Result = 00000012
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 0
+# 	 BR_ADDR= 0023,  PC_OUT  aka READ_ADDR= 0010,  PC_INC = 0011
+# 	   READ_DATA = 62000012
+# 	 RST_F = 1
+# 	 OP_CODE = 6
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in negative absolute branch
+# branch condition found !
+#                  495   READ_DATA[31:0] = 62000012
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0012
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000012
+# 	, MM= 2, ALU_Result = 00000012
+# 	, PC_WRITE = 0,  PC_SEL = 1,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0012,  PC_OUT  aka READ_ADDR= 0010,  PC_INC = 0011
+# 	   READ_DATA = 62000012
+# 	 RST_F = 1
+# 	 OP_CODE = 6
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in fetch
+#                  505   READ_DATA[31:0] = 00000000
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0000
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000000
+# 	, MM= 0, ALU_Result = 00000000
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0000,  PC_OUT  aka READ_ADDR= 0012,  PC_INC = 0013
+# 	   READ_DATA = 00000000
+# 	 RST_F = 1
+# 	 OP_CODE = 0
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in decode
+# checking opcode
+# noop
+#                  515   READ_DATA[31:0] = 00000000
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0000
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000000
+# 	, MM= 0, ALU_Result = 00000000
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0000,  PC_OUT  aka READ_ADDR= 0012,  PC_INC = 0013
+# 	   READ_DATA = 00000000
+# 	 RST_F = 1
+# 	 OP_CODE = 0
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in fetch
+#                  525   READ_DATA[31:0] = 00000000
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0000
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000000
+# 	, MM= 0, ALU_Result = 00000000
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0000,  PC_OUT  aka READ_ADDR= 0013,  PC_INC = 0014
+# 	   READ_DATA = 00000000
+# 	 RST_F = 1
+# 	 OP_CODE = 0
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in decode
+# checking opcode
+# noop
+#                  535   READ_DATA[31:0] = 00000000
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0000
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000000
+# 	, MM= 0, ALU_Result = 00000000
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0000,  PC_OUT  aka READ_ADDR= 0013,  PC_INC = 0014
+# 	   READ_DATA = 00000000
+# 	 RST_F = 1
+# 	 OP_CODE = 0
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in fetch
+#                  545   READ_DATA[31:0] = 00000000
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0000
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000000
+# 	, MM= 0, ALU_Result = 00000000
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0000,  PC_OUT  aka READ_ADDR= 0014,  PC_INC = 0015
+# 	   READ_DATA = 00000000
+# 	 RST_F = 1
+# 	 OP_CODE = 0
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in decode
+# checking opcode
+# noop
+#                  555   READ_DATA[31:0] = 00000000
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0000
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000000
+# 	, MM= 0, ALU_Result = 00000000
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0000,  PC_OUT  aka READ_ADDR= 0014,  PC_INC = 0015
+# 	   READ_DATA = 00000000
+# 	 RST_F = 1
+# 	 OP_CODE = 0
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# in fetch
+#                  565   READ_DATA[31:0] = 88010001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0001
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000001
+# 	, MM= 8, ALU_Result = 00000001
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0001,  PC_OUT  aka READ_ADDR= 0015,  PC_INC = 0016
+# 	   READ_DATA = 88010001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00001234
+# in decode
+# checking opcode
+# alu_op
+# immediate operation
+#                  575   READ_DATA[31:0] = 88010001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0001
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000001
+# 	, MM= 8, ALU_Result = 00000001
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0001,  PC_OUT  aka READ_ADDR= 0015,  PC_INC = 0016
+# 	   READ_DATA = 88010001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000000, Regb=00001234
+# aluopImm_execute
+#                  585   READ_DATA[31:0] = 88010001
+# 	, R0= 00000000, R1 = 00001234
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0001
+# 	  RD_SEL = 0, ALU_OP = 1,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000001
+# 	, MM= 8, ALU_Result = 00000001
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0001,  PC_OUT  aka READ_ADDR= 0015,  PC_INC = 0016
+# 	   READ_DATA = 88010001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 1
+# 	 RegA=00000000, Regb=00001234
+# aluopImm_Write
+#                  595   READ_DATA[31:0] = 88010001
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 0001
+# 	  RD_SEL = 0, ALU_OP = 1,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00000001
+# 	, MM= 8, ALU_Result = 00000001
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0001,  PC_OUT  aka READ_ADDR= 0015,  PC_INC = 0016
+# 	   READ_DATA = 88010001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 1
+# 	 RegA=00000000, Regb=00001234
+# in fetch
+#                  605   READ_DATA[31:0] = 80112001
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 2001
+# 	  RD_SEL = 0, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00002002
+# 	, MM= 0, ALU_Result = 00002002
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 2001,  PC_OUT  aka READ_ADDR= 0016,  PC_INC = 0017
+# 	   READ_DATA = 80112001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000001, Regb=00001234
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                  615   READ_DATA[31:0] = 80112001
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 2001
+# 	  RD_SEL = 0, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00002002
+# 	, MM= 0, ALU_Result = 00002002
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 2001,  PC_OUT  aka READ_ADDR= 0016,  PC_INC = 0017
+# 	   READ_DATA = 80112001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000001, Regb=00000001
+# aluopReg_Execute
+#                  625   READ_DATA[31:0] = 80112001
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000000, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 2001
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000002
+# 	, MM= 0, ALU_Result = 00000002
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 2001,  PC_OUT  aka READ_ADDR= 0016,  PC_INC = 0017
+# 	   READ_DATA = 80112001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 1
+# 	 RegA=00000001, Regb=00000001
+# aluopReg_Write
+#                  635   READ_DATA[31:0] = 80112001
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 2001
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00000002
+# 	, MM= 0, ALU_Result = 00000002
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 2001,  PC_OUT  aka READ_ADDR= 0016,  PC_INC = 0017
+# 	   READ_DATA = 80112001
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 1
+# 	 RegA=00000001, Regb=00000001
+# in fetch
+#                  645   READ_DATA[31:0] = 8022300b
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 300b
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 0000300d
+# 	, MM= 0, ALU_Result = 0000300d
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 300b,  PC_OUT  aka READ_ADDR= 0017,  PC_INC = 0018
+# 	   READ_DATA = 8022300b
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000002, Regb=00000002
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                  655   READ_DATA[31:0] = 8022300b
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 300b
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 0000300d
+# 	, MM= 0, ALU_Result = 0000300d
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 300b,  PC_OUT  aka READ_ADDR= 0017,  PC_INC = 0018
+# 	   READ_DATA = 8022300b
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000002, Regb=00000002
+# aluopReg_Execute
+#                  665   READ_DATA[31:0] = 8022300b
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00001234
+# 	, R4 = 00000000 
+# 	 IMMediate = 300b
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00000008
+# 	, MM= 0, ALU_Result = 00000008
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 300b,  PC_OUT  aka READ_ADDR= 0017,  PC_INC = 0018
+# 	   READ_DATA = 8022300b
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000002, Regb=00000002
+# aluopReg_Write
+#                  675   READ_DATA[31:0] = 8022300b
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00000008
+# 	, R4 = 00000000 
+# 	 IMMediate = 300b
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00000008
+# 	, MM= 0, ALU_Result = 00000008
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 300b,  PC_OUT  aka READ_ADDR= 0017,  PC_INC = 0018
+# 	   READ_DATA = 8022300b
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000002, Regb=00000002
+# in fetch
+#                  685   READ_DATA[31:0] = 80124002
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00000008
+# 	, R4 = 00000000 
+# 	 IMMediate = 4002
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00004003
+# 	, MM= 0, ALU_Result = 00004003
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 4002,  PC_OUT  aka READ_ADDR= 0018,  PC_INC = 0019
+# 	   READ_DATA = 80124002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000001, Regb=00000002
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                  695   READ_DATA[31:0] = 80124002
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00000008
+# 	, R4 = 00000000 
+# 	 IMMediate = 4002
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00004003
+# 	, MM= 0, ALU_Result = 00004003
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 4002,  PC_OUT  aka READ_ADDR= 0018,  PC_INC = 0019
+# 	   READ_DATA = 80124002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = 0    STAT_EN = 0
+# 	 RegA=00000001, Regb=00000002
+# aluopReg_Execute
+#                  705   READ_DATA[31:0] = 80124002
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00000008
+# 	, R4 = 00000000 
+# 	 IMMediate = 4002
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = ffffffff
+# 	, MM= 0, ALU_Result = ffffffff
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 4002,  PC_OUT  aka READ_ADDR= 0018,  PC_INC = 0019
+# 	   READ_DATA = 80124002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 1
+# 	 RegA=00000001, Regb=00000002
+# aluopReg_Write
+#                  715   READ_DATA[31:0] = 80124002
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00000008
+# 	, R4 = ffffffff 
+# 	 IMMediate = 4002
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = ffffffff
+# 	, MM= 0, ALU_Result = ffffffff
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 4002,  PC_OUT  aka READ_ADDR= 0018,  PC_INC = 0019
+# 	   READ_DATA = 80124002
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 1
+# 	 RegA=00000001, Regb=00000002
+# in fetch
+#                  725   READ_DATA[31:0] = 8043400a
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00000008
+# 	, R4 = ffffffff 
+# 	 IMMediate = 400a
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00004009
+# 	, MM= 0, ALU_Result = 00004009
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 400a,  PC_OUT  aka READ_ADDR= 0019,  PC_INC = 001a
+# 	   READ_DATA = 8043400a
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ffffffff, Regb=00000008
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                  735   READ_DATA[31:0] = 8043400a
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00000008
+# 	, R4 = ffffffff 
+# 	 IMMediate = 400a
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00004009
+# 	, MM= 0, ALU_Result = 00004009
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 400a,  PC_OUT  aka READ_ADDR= 0019,  PC_INC = 001a
+# 	   READ_DATA = 8043400a
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ffffffff, Regb=00000008
+# aluopReg_Execute
+#                  745   READ_DATA[31:0] = 8043400a
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00000008
+# 	, R4 = ffffffff 
+# 	 IMMediate = 400a
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00ffffff
+# 	, MM= 0, ALU_Result = 00ffffff
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 400a,  PC_OUT  aka READ_ADDR= 0019,  PC_INC = 001a
+# 	   READ_DATA = 8043400a
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ffffffff, Regb=00000008
+# aluopReg_Write
+#                  755   READ_DATA[31:0] = 8043400a
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00000008
+# 	, R4 = 00ffffff 
+# 	 IMMediate = 400a
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00ffffff
+# 	, MM= 0, ALU_Result = 00ffffff
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 400a,  PC_OUT  aka READ_ADDR= 0019,  PC_INC = 001a
+# 	   READ_DATA = 8043400a
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ffffffff, Regb=00000008
+# in fetch
+#                  765   READ_DATA[31:0] = 80342007
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00000008
+# 	, R4 = 00ffffff 
+# 	 IMMediate = 2007
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 0000200f
+# 	, MM= 0, ALU_Result = 0000200f
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 2007,  PC_OUT  aka READ_ADDR= 001a,  PC_INC = 001b
+# 	   READ_DATA = 80342007
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00000008, Regb=00ffffff
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                  775   READ_DATA[31:0] = 80342007
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00000008
+# 	, R4 = 00ffffff 
+# 	 IMMediate = 2007
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 0000200f
+# 	, MM= 0, ALU_Result = 0000200f
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 2007,  PC_OUT  aka READ_ADDR= 001a,  PC_INC = 001b
+# 	   READ_DATA = 80342007
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00000008, Regb=00ffffff
+# aluopReg_Execute
+#                  785   READ_DATA[31:0] = 80342007
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00000002, R3 = 00000008
+# 	, R4 = 00ffffff 
+# 	 IMMediate = 2007
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 00fffff7
+# 	, MM= 0, ALU_Result = 00fffff7
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 2007,  PC_OUT  aka READ_ADDR= 001a,  PC_INC = 001b
+# 	   READ_DATA = 80342007
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00000008, Regb=00ffffff
+# aluopReg_Write
+#                  795   READ_DATA[31:0] = 80342007
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00fffff7, R3 = 00000008
+# 	, R4 = 00ffffff 
+# 	 IMMediate = 2007
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00fffff7
+# 	, MM= 0, ALU_Result = 00fffff7
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 2007,  PC_OUT  aka READ_ADDR= 001a,  PC_INC = 001b
+# 	   READ_DATA = 80342007
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00000008, Regb=00ffffff
+# in fetch
+#                  805   READ_DATA[31:0] = 80202004
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00fffff7, R3 = 00000008
+# 	, R4 = 00ffffff 
+# 	 IMMediate = 2004
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 01001ffb
+# 	, MM= 0, ALU_Result = 01001ffb
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 2004,  PC_OUT  aka READ_ADDR= 001b,  PC_INC = 001c
+# 	   READ_DATA = 80202004
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00fffff7, Regb=00000000
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                  815   READ_DATA[31:0] = 80202004
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00fffff7, R3 = 00000008
+# 	, R4 = 00ffffff 
+# 	 IMMediate = 2004
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = 01001ffb
+# 	, MM= 0, ALU_Result = 01001ffb
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 2004,  PC_OUT  aka READ_ADDR= 001b,  PC_INC = 001c
+# 	   READ_DATA = 80202004
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00fffff7, Regb=00000000
+# aluopReg_Execute
+#                  825   READ_DATA[31:0] = 80202004
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = 00fffff7, R3 = 00000008
+# 	, R4 = 00ffffff 
+# 	 IMMediate = 2004
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = ff000008
+# 	, MM= 0, ALU_Result = ff000008
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 2004,  PC_OUT  aka READ_ADDR= 001b,  PC_INC = 001c
+# 	   READ_DATA = 80202004
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00fffff7, Regb=00000000
+# aluopReg_Write
+#                  835   READ_DATA[31:0] = 80202004
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = ff000008, R3 = 00000008
+# 	, R4 = 00ffffff 
+# 	 IMMediate = 2004
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = ff000008
+# 	, MM= 0, ALU_Result = ff000008
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 2004,  PC_OUT  aka READ_ADDR= 001b,  PC_INC = 001c
+# 	   READ_DATA = 80202004
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00fffff7, Regb=00000000
+# in fetch
+#                  845   READ_DATA[31:0] = 80214009
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = ff000008, R3 = 00000008
+# 	, R4 = 00ffffff 
+# 	 IMMediate = 4009
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 01004000
+# 	, MM= 0, ALU_Result = 01004000
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 4009,  PC_OUT  aka READ_ADDR= 001c,  PC_INC = 001d
+# 	   READ_DATA = 80214009
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00fffff7, Regb=00000001
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                  855   READ_DATA[31:0] = 80214009
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = ff000008, R3 = 00000008
+# 	, R4 = 00ffffff 
+# 	 IMMediate = 4009
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = ff004011
+# 	, MM= 0, ALU_Result = ff004011
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 4009,  PC_OUT  aka READ_ADDR= 001c,  PC_INC = 001d
+# 	   READ_DATA = 80214009
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ff000008, Regb=00000001
+# aluopReg_Execute
+#                  865   READ_DATA[31:0] = 80214009
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = ff000008, R3 = 00000008
+# 	, R4 = 00ffffff 
+# 	 IMMediate = 4009
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = fe000011
+# 	, MM= 0, ALU_Result = fe000011
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 4009,  PC_OUT  aka READ_ADDR= 001c,  PC_INC = 001d
+# 	   READ_DATA = 80214009
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ff000008, Regb=00000001
+# aluopReg_Write
+#                  875   READ_DATA[31:0] = 80214009
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = ff000008, R3 = 00000008
+# 	, R4 = fe000011 
+# 	 IMMediate = 4009
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = fe000011
+# 	, MM= 0, ALU_Result = fe000011
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 4009,  PC_OUT  aka READ_ADDR= 001c,  PC_INC = 001d
+# 	   READ_DATA = 80214009
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ff000008, Regb=00000001
+# in fetch
+#                  885   READ_DATA[31:0] = 80245005
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = ff000008, R3 = 00000008
+# 	, R4 = fe000011 
+# 	 IMMediate = 5005
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = ff00500d
+# 	, MM= 0, ALU_Result = ff00500d
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 5005,  PC_OUT  aka READ_ADDR= 001d,  PC_INC = 001e
+# 	   READ_DATA = 80245005
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ff000008, Regb=fe000011
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                  895   READ_DATA[31:0] = 80245005
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = ff000008, R3 = 00000008
+# 	, R4 = fe000011 
+# 	 IMMediate = 5005
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = ff00500d
+# 	, MM= 0, ALU_Result = ff00500d
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 5005,  PC_OUT  aka READ_ADDR= 001d,  PC_INC = 001e
+# 	   READ_DATA = 80245005
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ff000008, Regb=fe000011
+# aluopReg_Execute
+#                  905   READ_DATA[31:0] = 80245005
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = ff000008, R3 = 00000008
+# 	, R4 = fe000011 
+# 	 IMMediate = 5005
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = ff000019
+# 	, MM= 0, ALU_Result = ff000019
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 5005,  PC_OUT  aka READ_ADDR= 001d,  PC_INC = 001e
+# 	   READ_DATA = 80245005
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ff000008, Regb=fe000011
+# aluopReg_Write
+#                  915   READ_DATA[31:0] = 80245005
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = ff000008, R3 = 00000008
+# 	, R4 = fe000011 
+# 	 IMMediate = 5005
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = ff000019
+# 	, MM= 0, ALU_Result = ff000019
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 5005,  PC_OUT  aka READ_ADDR= 001d,  PC_INC = 001e
+# 	   READ_DATA = 80245005
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ff000008, Regb=fe000011
+# in fetch
+#                  925   READ_DATA[31:0] = 80243006
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = ff000008, R3 = 00000008
+# 	, R4 = fe000011 
+# 	 IMMediate = 3006
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = ff00300e
+# 	, MM= 0, ALU_Result = ff00300e
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 3006,  PC_OUT  aka READ_ADDR= 001e,  PC_INC = 001f
+# 	   READ_DATA = 80243006
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ff000008, Regb=fe000011
+# in decode
+# checking opcode
+# alu_op
+# r-type aluop
+#                  935   READ_DATA[31:0] = 80243006
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = ff000008, R3 = 00000008
+# 	, R4 = fe000011 
+# 	 IMMediate = 3006
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = ff00300e
+# 	, MM= 0, ALU_Result = ff00300e
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 3006,  PC_OUT  aka READ_ADDR= 001e,  PC_INC = 001f
+# 	   READ_DATA = 80243006
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ff000008, Regb=fe000011
+# aluopReg_Execute
+#                  945   READ_DATA[31:0] = 80243006
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = ff000008, R3 = 00000008
+# 	, R4 = fe000011 
+# 	 IMMediate = 3006
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 0, WB_DATA = fe000000
+# 	, MM= 0, ALU_Result = fe000000
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 3006,  PC_OUT  aka READ_ADDR= 001e,  PC_INC = 001f
+# 	   READ_DATA = 80243006
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ff000008, Regb=fe000011
+# aluopReg_Write
+#                  955   READ_DATA[31:0] = 80243006
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = ff000008, R3 = fe000000
+# 	, R4 = fe000011 
+# 	 IMMediate = 3006
+# 	  RD_SEL = 1, ALU_OP = 0,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = fe000000
+# 	, MM= 0, ALU_Result = fe000000
+# 	, PC_WRITE = 0,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 3006,  PC_OUT  aka READ_ADDR= 001e,  PC_INC = 001f
+# 	   READ_DATA = 80243006
+# 	 RST_F = 1
+# 	 OP_CODE = 8
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=ff000008, Regb=fe000011
+# in fetch
+#                  965   READ_DATA[31:0] = f0000000
+# 	, R0= 00000000, R1 = 00000001
+# 	 R2 = ff000008, R3 = fe000000
+# 	, R4 = fe000011 
+# 	 IMMediate = 0000
+# 	  RD_SEL = 1, ALU_OP = 3,  WB_SEL = 0
+# 	, RF_WE = 1, WB_DATA = 00000000
+# 	, MM= 0, ALU_Result = 00000000
+# 	, PC_WRITE = 1,  PC_SEL = 0,  PC_RST = 0,  BR_SEL = 1
+# 	 BR_ADDR= 0000,  PC_OUT  aka READ_ADDR= 001f,  PC_INC = 0020
+# 	   READ_DATA = f0000000
+# 	 RST_F = 1
+# 	 OP_CODE = f
+# 	 STAT = a    STAT_EN = 0
+# 	 RegA=00000000, Regb=00000000
+# Halt.
+# Break in Module ctrl at ctrl.v line 83
+# Stopped at ctrl.v line 83 

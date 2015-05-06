@@ -11,10 +11,8 @@ module sisc( CLK, RST_F );
    wire [15:0] PC_OUT; //output for pc as pc_out, input for im as read_addr
    wire [15:0] BR_ADDR;  //output for br as br_addr, input for pc as br_addr
    wire [31:0] READ_DATA;  //output of IM as read_data, bits [15:0] input to BR as imm
-   //datapath for part3
-   wire [15:0] MUX16_OUT; //output of MUX16 module
-   wire [31:0] DM_OUT; //output for DM module
-   
+
+
    //control signals
    wire RD_SEL, WB_SEL, RF_WE, STAT_EN;
    wire [31:0] MUX32_0;
@@ -22,10 +20,8 @@ module sisc( CLK, RST_F );
    wire [1:0] ALU_OP;
    //control signals for part2
    wire PC_SEL, PC_WRITE/*aka PC_EN*/, PC_RST, BR_SEL;
-   //control signals for part3
-   wire MM_SEL, DM_WE;
 
-   assign MUX32_0 = 32'b11111111111111110001111111111111;
+   assign MUX32_0 = 32'd0;
    //instantiate modules
    alu my_alu( 	.rsa (RSA), 
 		.rsb (RSB), 
@@ -88,29 +84,17 @@ module sisc( CLK, RST_F );
   im my_im( 	.read_addr 	(PC_OUT),  //input
 		.read_data 	(READ_DATA)  //output
 		);
-		
-//modules for part3
-  mux16 my_mux16(	.in_a 		(READ_DATA[15:0]),
-			.in_b 		(ALU_RESULT),
-			.sel		(MM_SEL),
-			.out		(MUX16_OUT));
-  
-  dm my_dm(		.read_addr 	(MUX16_OUT),
-			.write_addr 	(MUX16_OUT),
-			.write_data 	(RSB),
-			.dm_we      	(DM_WE),
-			.read_data	(DM_OUT));
 
    //monitor signals READ_DATA, R1, R2, R3, RD_SEL, ALU_OP, WB_SEL, RF_WE, and WB_DATA
   initial begin
-	my_rf.ram_array[1] <=32'b00001111000011110000111100001111;
-	my_rf.ram_array[2] <=32'b0000000000000000000000000000011; 
+//	my_rf.ram_array[1] <=32'd1234;
+//	my_rf.ram_array[2] <=32'd0; 
 	end
    initial 
       begin
 
-         $monitor( $time,,,,  "READ_DATA[31:0] = %h\n\t, R0= %b, R1 = %b\n\t R2 = %b, R3 = %b\n\t, R4 = %b \n\t IMMediate = %b\n\t  RD_SEL = %b, ALU_OP = %b,  WB_SEL = %b\n\t, RF_WE = %b, WB_DATA = %b\n\t, MM= %b, ALU_Result = %b\n\t, PC_WRITE = %b,  PC_SEL = %b,  PC_RST = %b,  BR_SEL = %b\n\t BR_ADDR= %b,  PC_OUT  aka READ_ADDR= %b,  PC_INC = %b\n\t   READ_DATA = %b\n\t RST_F = %b\n\n",
-          READ_DATA, my_rf.ram_array[0], my_rf.ram_array[1], my_rf.ram_array[2], my_rf.ram_array[3], my_rf.ram_array[4], READ_DATA[15:0],  RD_SEL, ALU_OP, WB_SEL, RF_WE, WB_DATA , READ_DATA[27:24], ALU_RESULT, PC_WRITE, PC_SEL, PC_RST, BR_SEL, BR_ADDR, PC_OUT, PC_INC, READ_DATA, RST_F
+         $monitor( $time,,,,  "READ_DATA[31:0] = %h\n\t, R0= %h, R1 = %h\n\t R2 = %h, R3 = %h\n\t, R4 = %h \n\t IMMediate = %h\n\t  RD_SEL = %h, ALU_OP = %h,  WB_SEL = %h\n\t, RF_WE = %h, WB_DATA = %h\n\t, MM= %h, ALU_Result = %h\n\t, PC_WRITE = %h,  PC_SEL = %h,  PC_RST = %h,  BR_SEL = %h\n\t BR_ADDR= %h,  PC_OUT  aka READ_ADDR= %h,  PC_INC = %h\n\t   READ_DATA = %h\n\t RST_F = %h\n\t OP_CODE = %h\n\t STAT = %h    STAT_EN = %h\n\t RegA=%h, Regb=%h",
+          READ_DATA, my_rf.ram_array[0], my_rf.ram_array[1], my_rf.ram_array[2], my_rf.ram_array[3], my_rf.ram_array[4], READ_DATA[15:0],  RD_SEL, ALU_OP, WB_SEL, RF_WE, WB_DATA , READ_DATA[27:24], ALU_RESULT, PC_WRITE, PC_SEL, PC_RST, BR_SEL, BR_ADDR, PC_OUT, PC_INC, READ_DATA, RST_F, READ_DATA[31:28], STAT, STAT_EN, my_rf.rsa, my_rf.rsb
                     );
 end
 endmodule
