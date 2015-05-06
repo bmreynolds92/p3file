@@ -3,7 +3,7 @@
 
 `timescale 1ns/100ps
 
-module ctrl (CLK, RST_F, OPCODE, MM, STAT, RF_WE, ALU_OP, WB_SEL, RD_SEL, PC_SEL, PC_WRITE, PC_RST, BR_SEL);
+module ctrl (CLK, RST_F, OPCODE, MM, STAT, RF_WE, ALU_OP, WB_SEL, RD_SEL, PC_SEL, PC_WRITE, PC_RST, BR_SEL, MM_SEL, DM_WE);
   
   /* TODO: Declare the ports listed above as inputs or outputs */
   input CLK, RST_F;
@@ -14,9 +14,11 @@ module ctrl (CLK, RST_F, OPCODE, MM, STAT, RF_WE, ALU_OP, WB_SEL, RD_SEL, PC_SEL
   
   output WB_SEL, RD_SEL, RF_WE;
   output PC_SEL, PC_WRITE, PC_RST, BR_SEL; //part 2 outputs
+  output MM_SEL, DM_WE; //part 3 outputs
   
   reg WB_SEL, RD_SEL, RF_WE;
   reg PC_SEL, PC_WRITE, PC_RST, BR_SEL; //part 2 registers
+  reg MM_SEL, DM_WE; //part 3 registers
   
   output [1:0] ALU_OP;
   reg [1:0] ALU_OP;

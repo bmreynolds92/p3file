@@ -11,8 +11,10 @@ module sisc( CLK, RST_F );
    wire [15:0] PC_OUT; //output for pc as pc_out, input for im as read_addr
    wire [15:0] BR_ADDR;  //output for br as br_addr, input for pc as br_addr
    wire [31:0] READ_DATA;  //output of IM as read_data, bits [15:0] input to BR as imm
-
-
+   //datapath for part3
+   wire [15:0] MUX16_OUT; //output of MUX16 module
+   wire [31:0] DM_OUT; //output for DM module
+   
    //control signals
    wire RD_SEL, WB_SEL, RF_WE, STAT_EN;
    wire [31:0] MUX32_0;
@@ -20,6 +22,8 @@ module sisc( CLK, RST_F );
    wire [1:0] ALU_OP;
    //control signals for part2
    wire PC_SEL, PC_WRITE/*aka PC_EN*/, PC_RST, BR_SEL;
+   //control signals for part3
+   wire MM_SEL, DM_WE;
 
    assign MUX32_0 = 32'b11111111111111110001111111111111;
    //instantiate modules
@@ -84,6 +88,18 @@ module sisc( CLK, RST_F );
   im my_im( 	.read_addr 	(PC_OUT),  //input
 		.read_data 	(READ_DATA)  //output
 		);
+		
+//modules for part3
+  mux16 my_mux16(	.in_a 		(READ_DATA[15:0]),
+			.in_b 		(ALU_RESULT),
+			.sel		(MM_SEL),
+			.out		(MUX16_OUT));
+  
+  dm my_dm(		.read_addr 	(MUX16_OUT),
+			.write_addr 	(MUX16_OUT),
+			.write_data 	(RSB),
+			.dm_we      	(DM_WE),
+			.read_data	(DM_OUT));
 
    //monitor signals READ_DATA, R1, R2, R3, RD_SEL, ALU_OP, WB_SEL, RF_WE, and WB_DATA
   initial begin
